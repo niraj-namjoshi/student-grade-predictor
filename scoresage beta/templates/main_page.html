@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>My First HTML Page</title>
+    </head>
+    <body>
+      <form action="" method = "post">
+        <label for="Medu">Name:</label>
+        <input type="number" id="Medu" name="Medu"><br><br>
+
+        <label for="Fedu">Name:</label>
+        <input type="number" id="Fedu" name="Fedu"><br><br>
+
+        <label for="studytime">Name:</label>
+        <input type="number" id="studytime" name="studytime"><br><br>
+
+        <label for="Failures">Name:</label>
+        <input type="number" id="Failures" name="Failures"><br><br>
+
+        <label for="Dalc">Name:</label>
+        <input type="number" id="Dalc" name="Dalc"><br><br>
+
+        <label for="Walc">Name:</label>
+        <input type="number" id="Walc" name="Walc"><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      {% for uoi in list1 %}
+        <p>{{uoi}}</p>
+      {% endfor %}
+      
+    </body>
+  </html>
+  
