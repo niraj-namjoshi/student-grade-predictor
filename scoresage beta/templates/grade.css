@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lora&display=swap');
+body{
+    background-color:rgb(18, 241, 92);
+    margin:0;
+    padding: 0;
+    /*overflow-y:initial;
+    background-image:url(backgroundimage.jpeg);
+    background-repeat:no-repeat;
+    background-size:620px auto;
+    overflow:hidden;*/
+    background-image: url('https://www.pwc.at/de/publikationen/digital-trust-survey-2021/2020-dti-pulse-survey-animation.gif');
+    background-size:680px auto;
+    background-repeat:repeat;
+    overflow: hidden;
+
+}
+.navbar{
+    width:100%;
+    display:flex;
+    margin:0;
+}
+
+header{
+    background:black;
+    margin:0;
+}
+
+.brandimg{
+    float:left;
+    width:50px;
+    height:50px;
+    border:15px;
+    border-color: black;
+    border-radius: 100px;
+}
+nav{
+    float:right;
+    margin:0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display:inline-block;
+    padding:0 10px;
+    margin-top:15px;
+}
+
+.linktohome{
+    padding-left:30px;
+    padding-right:2px;
+    text-decoration:none;
+    color:white;
+}
+.linktoabout{
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration:none;
+    color:white;
+}
+
+.welcome{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style:inherit;
+    font-stretch: expanded;
+    font-variant:small-caps ;
+    text-decoration:underline;
+    text-decoration-style: double;
+    margin:0px 50px;
+}
+
+/*new form styling*/
+.formbody{
+    background:linear-gradient(0deg,black,grey);
+    background-color: rgba(128,128,128,0.125);
+    padding: 0px 10px;
+    padding-bottom: 10px;
+    padding-top:5px;
+    font-family: 'Lora', serif;
+    margin:0% 30%;
+    margin-bottom: 10%;
+    max-height: 600px;
+    /*my changes
+    max-width: 500px;
+    margin: 5% 33%;*/
+}
+
+.wrapper{
+    max-width: 500px;
+    width:100%;
+    background:white;
+    /*background:linear-gradient(360deg,red,black);*/
+    margin: 20px auto;
+    padding:30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    max-height: 450px;
+    overflow-y: scroll;
+    border:black;
+    border-style:groove;
+    border-width: 5px;
+    border-top: 5px;
+    
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color:firebrick;
+    text-transform: uppercase;
+    text-align: center;
+
+    
+}
+
+.wrapper .form_{
+    width:100%;
+}
+
+.wrapper .form_ .input_field{
+    margin-bottom: 15px;
+    display:flex;
+    align-items: center;
+}
+
+.wrapper .form_ .input_field label{
+    width:200px;
+    color:darkgrey;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-right: 10px;
+    font-size:14px;
+}
+
+.wrapper .form_ .input_field input,.wrapper .form_ .input_field textarea {
+    width:100%;
+    outline:none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+}
+
+.wrapper .form_ .input_field .input:focus{
+    border-color:red;
+    border-width:2px;
+}
+
+.wrapper .form_ .input_field .textarea:focus{
+    border-color:red;
+    border-width:2px;
+}
+
+.wrapper .form_ .input_field .custom_select:focus{
+    border-color:red;
+    border-width:2px;
+}
+
+.wrapper .form_ .input_field .textarea{
+    resize:none;
+    height:125px;
+}
+
+.wrapper .form_ .input_field .custom_select{
+    position:relative;
+    width:100%;
+    height:37px;
+
+}
+
+.wrapper .form_ .input_field .custom_select select{
+    -webkit-appearance:none;
+    appearance:none;
+    border: 1px solid #d5dbd9;
+    width:100%;
+    height:100%;
+    padding:8px 10px;
+    border-radius: 3px;
+    outline:none;
+}
+
+.wrapper .form_ .input_field .custom_select:before{
+    content:"";
+    position:absolute;
+    top:12px;
+    right:10px;
+    border:8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events:none;
+}
+
+.wrapper .form_ .input_field .btn{
+    width:100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border:0;
+    background:#f75539;
+    color:#fff;
+    cursor: pointer;
+    border-radius:3px;
+    outline:none;
+}
+
+.wrapper .form_ .input_field:last-child{
+    margin-bottom:0;
+}
+
+.wrapper .form_ .input_field .btn:hover{
+    background:darkred;
+}
+
+
+/*previous form styling*/
+/*
+.outercontainer{
+    display:flex;
+    height:65vh;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background:linear-gradient(135deg,#71b7e6,#9b59b6);   
+}
+
+.innercontainer{
+    max-width:700px;
+    width:100%;
+    background:linear-gradient(135deg,cyan,rgb(53, 52, 52));
+    padding:25px 30px;
+    border-radius:2px; 
+}
+
+.outercontainer .title{
+    font-size: 30px;
+    font-weight:bolder;
+    position: relative;
+}
+
+.outercontainer .title::before{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:0;
+    height:3px;
+    width:30px;
+    background:linear-gradient(135deg,blue,black); 
+}
+
+.outercontainer form .user_details{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin:20px 0 12px 0;
+}
+
+form .user_details .inputbox{
+    margin-bottom:15px;
+    width:calc(100%/ 2 - 20px)
+}
+
+.user_details .inputbox .details{
+    display:block;
+    font-weight:bold;
+    margin-bottom: 5px;
+}
+
+.user_details .inputbox input{
+    height:30px;
+    width:90%;
+    outline:none;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width:2px;
+    transition: all 0.3s ease;
+}
+
+.user_details .inputbox input:focus,
+.user_details .inputbox input:valid{
+    border-color:darkblue;
+    border-width:2px;
+}
+
+form .gender_details .gender-title{
+    font-size:16px;
+    font-weight: bold;
+}
+
+form .gender_details .category{
+    display:flex;
+    width:80%;
+    margin:14px 0; 
+    justify-content: space-between;
+}
+
+.gender_details .category label{
+    display:flex;
+    align-items: center;
+}
+
+.gender_details .category .dot{
+    height:18px;
+    width:18px;
+    background:red;
+    border-radius:50%; 
+    margin-right:10px;
+}
+*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Select Input</title>
+    <style>
+        .custom_select {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+        }
+        .custom_select select {
+            width: 100%;
+            height: 40px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .custom_select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom_select">
+        <select id="select_option" required>
+            <option value="">--Select your option--</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+    <br><br>
+    <button onclick="submitForm()">Submit</button>
+    <script>
+        function submitForm() {
+            var selectOption = document.getElementById("select_option").value;
+            // Send the value to the server or perform any other action
+            // using JavaScript's fetch or AJAX
+
+            // For demonstration purposes, we'll navigate to a Flask route with the value as a parameter
+            window.location.href = "/process?select_option=" + selectOption;
+        }
+    </script>
+</body>
+</html>
