@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lora&display=swap');
+body{
+    background-color:rgb(18, 241, 92);
+    margin:0;
+    padding: 0;
+    /*overflow-y:initial;
+    background-image:url(backgroundimage.jpeg);
+    background-repeat:no-repeat;
+    background-size:620px auto;
+    overflow:hidden;*/
+    background-image: url('https://www.pwc.at/de/publikationen/digital-trust-survey-2021/2020-dti-pulse-survey-animation.gif');
+    background-size:680px auto;
+    background-repeat:repeat;
+    overflow: hidden;
+
+}
+.navbar{
+    width:100%;
+    display:flex;
+    margin:0;
+}
+
+header{
+    background:black;
+    margin:0;
+}
+
+.brandimg{
+    float:left;
+    width:50px;
+    height:50px;
+    border:15px;
+    border-color: black;
+    border-radius: 100px;
+}
+nav{
+    float:right;
+    margin:0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li{
+    display:inline-block;
+    padding:0 10px;
+    margin-top:15px;
+}
+
+.linktohome{
+    padding-left:30px;
+    padding-right:2px;
+    text-decoration:none;
+    color:white;
+}
+.linktoabout{
+    padding-left:10px;
+    padding-right:10px;
+    text-decoration:none;
+    color:white;
+}
+
+.welcome{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-style:inherit;
+    font-stretch: expanded;
+    font-variant:small-caps ;
+    text-decoration:underline;
+    text-decoration-style: double;
+    margin:0px 530px;
+}
+
+.homepara{
+    margin:50px 25px;
+    background-color:crimson;
+    width:1500px;
+    height:600px;
+    background:linear-gradient(135degrees,red,black);
+    color:white;
+    border-radius:10px;
+    background-image:url(bg_for_about_page.jpg);
+    background-repeat:no-repeat;
+    background-size:1500px 600px;
+    font-family:cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+    border:3px double red;
+    overflow-y: scroll;
+}
+.summary{
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: bolder;
+    font-style:inherit;
+    font-stretch: expanded;
+    font-variant:normal ;
+    text-decoration:underline;
+    text-decoration-style: double;
+    color: lightblue;
+    margin:0px 470px;
+    padding-bottom: 100px;
+}
+
+
+

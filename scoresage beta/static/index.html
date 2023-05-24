@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <link rel="shortcut icon" type="image/x-icon" href="studentFavicon.jpeg.jpg">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>ScoreSAGE</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lora&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+        <link rel="mainpagehtml" href="main.html">
+        <link rel="submithtml" href="submit.html">
+        <script src="https://kit.fontawesome.com/413f3860b9.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <img src="studentFavicon.jpeg.jpg" alt="student" class="brandimg">
+                <nav>
+                    <ul>
+                        <li class="homepagelogo"><a href="C:\Users\niraj\OneDrive\Desktop\imp files\ggg\extracurricular\scoresage beta\templates\index.html" class="linktohome">Home</a></li>
+                        <li class="aboutpagelogo"><a href="{{ url_for('static', filename='about.html') }}" class="linktoabout">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="container">
+            <span><h1 class="welcome" > HI! Welcome to ScoreSage </h1></span>
+            <span><p class="homepara" >Have exams going on? <i class="fa-solid fa-book fa-2s" style="color: #e00606;"></i><br>
+                                     Want to predict your grade based on your preparation and other parameters?<br>
+                                     Then I reckon you have come to the right place!!<br>
+                                     <b>scoreSAGE</b> gives you exactly what you need.<br>
+                                     A prediction of your grades based on daily life parameters and much more.<br>
+                                     Click the button below to get started with the prediction.<br>
+                                     <span><i id="downarrow" class="fa-sharp fa-solid fa-arrow-down fa-flip" style="color: #f5623d;"></i></span><br>
+                                     <form method="POST">
+                                        <input type="submit" value="Start->" class="mainpagebtn" method="POST">
+                                    </form>
+                    </p>
+            </span>
+        </div>
+    </body>
